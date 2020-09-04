@@ -5,6 +5,7 @@ export default createGlobalStyle`
       --background: #e1e8ed;
       --white: #FFF;
       --gray: #E1E8ED;
+      --gray-strong: #657786
       --blue-strong: #1B31A8;
       --blue-light: #0079FF;
   }
@@ -29,24 +30,23 @@ export default createGlobalStyle`
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
   }
-  h1, h2, h3, h4, h5, h6, strong {
+  h1, h2, strong {
     font-weight: 700;
   }
+
+  span {
+    font-weight: normal;
+  }
+
   button {
     cursor: pointer;
-     overflow: visible;
   }
 
   img {
   border: 0;
-  max-width: 100%;
+  height: 37px;
   vertical-align: middle;
   display: inline-block;
   }
-  a {
-    text-decoration: none;
-  }
-  ul {
-    list-style: none;
-  }
+
 `;
