@@ -25,7 +25,10 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.1",
+    "git-commit-msg-linter": "^2.6.0",
+    "husky": "^4.2.5",
     "jest": "^25.2.3",
+    "lint-staged": "^10.3.0",
     "mkdirp": "^1.0.3",
     "parcel-bundler": "^1.12.4",
     "prettier": "^1.19.1",
@@ -42,7 +45,7 @@
     "type": "git",
     "url": "git+https://github.com/OriginFinancial/frontend-challenge.git"
   },
-  "author": "",
+  "author": "Isaque Igor",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/OriginFinancial/frontend-challenge/issues"
