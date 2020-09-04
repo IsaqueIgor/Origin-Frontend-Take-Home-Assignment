@@ -1,14 +1,12 @@
 import React from 'react';
 
-import Logo from '../../styles/icons/logo.svg';
-import { HeaderContainer, HeaderContent } from './styles';
+import { Logo } from '../../styles/icons';
+import { HeaderContainer } from './styles';
 
 const Header: React.FC = () => {
   return (
     <HeaderContainer>
-      <HeaderContent>
-        <img src={Logo} alt="Origin" />
-      </HeaderContent>
+      <Logo />
     </HeaderContainer>
   );
 };
