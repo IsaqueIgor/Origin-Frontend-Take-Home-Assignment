@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-function SvgAcademy(props: React.SVGProps<SVGSVGElement>) {
+function SvgHouse(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       viewBox="0 0 37 40"
@@ -18,4 +18,4 @@ function SvgAcademy(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-export default SvgAcademy;
+export default SvgHouse;

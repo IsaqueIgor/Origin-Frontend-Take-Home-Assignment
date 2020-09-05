@@ -2,14 +2,13 @@ import * as React from 'react';
 
 function SvgArrow(props: React.SVGProps<SVGSVGElement>) {
   return (
-    <svg viewBox="0 0 10 19" version="1.1">
+    <svg viewBox="0 0 10 19" version="1.1" {...props}>
       <g
         id="7-Setup-/-Saving-Goal"
         stroke="none"
         strokeWidth="1"
         fill="none"
         fillRule="evenodd"
-        {...props}
       >
         <g
           id="1-Dt-1440-7-savingSetup-1-goCollege-1-Review-1-Default-"

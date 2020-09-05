@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-function SvgArrow(props: React.SVGProps<SVGSVGElement>) {
+function SvgLogo(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       width="80px"
@@ -41,4 +41,4 @@ function SvgArrow(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-export default SvgArrow;
+export default SvgLogo;

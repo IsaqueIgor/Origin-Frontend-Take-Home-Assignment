@@ -4,7 +4,7 @@ import { CardContainer, CardHeader } from './styles';
 import { AcademyIcon } from '../../styles/icons';
 
 type IProps = {
-  children?: any;
+  children?: React.ReactNode;
 };
 
 const Card: React.FC = ({ children }: IProps) => {

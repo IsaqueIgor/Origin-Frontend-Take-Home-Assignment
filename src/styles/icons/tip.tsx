@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-function SvgArrow(props: React.SVGProps<SVGSVGElement>) {
+function SvgTip(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       width="18px"
@@ -57,4 +57,4 @@ function SvgArrow(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-export default SvgArrow;
+export default SvgTip;

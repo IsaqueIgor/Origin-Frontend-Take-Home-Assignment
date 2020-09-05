@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
 :root {
-      --background: #e1e8ed;
+      --background: #F4F8FA;
       --white: #FFF;
       --gray: #E1E8ED;
       --gray-strong: #657786

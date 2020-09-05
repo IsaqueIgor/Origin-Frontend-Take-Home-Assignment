@@ -4,13 +4,18 @@ export const CardContainer = styled.form`
   display: flex;
   flex-direction: column;
   border-radius: 8px;
-  width: 500px;
+  height: auto;
+  max-width: 580px;
   padding: 40px;
   box-shadow: 0px 2px 16px rgba(225, 232, 237, 0.8);
   background-color: var(--white);
 
   @media (min-width: 600px) {
     padding: 48px 40px;
+    width: 100%;
+    h1 {
+      font-size: 32px;
+    }
   }
 `;
 
