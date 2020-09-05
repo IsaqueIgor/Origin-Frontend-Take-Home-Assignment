@@ -20,7 +20,7 @@ const CurrencyInput: React.FC<Props> = ({
     valueFromProp ? FormatNumber(valueFromProp) : ''
   );
 
-  const { amount } = useContext(Context);
+  const { setState } = useContext(Context);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const {
@@ -35,6 +35,7 @@ const CurrencyInput: React.FC<Props> = ({
     const valueAsNumber = StringToNumber(value);
 
     updateCurrentValue(FormatNumber(valueAsNumber));
+    setState({ amount: valueAsNumber });
     return updateValue(valueAsNumber);
   };
 

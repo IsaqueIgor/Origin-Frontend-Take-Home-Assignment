@@ -13,12 +13,13 @@ import {
 import { Container, Content, InputSection } from './styles';
 
 const SavingGoal: React.FC = () => {
-  const [state] = useState({
+  const [state, setState] = useState({
     year: 2021,
     month: 'October',
     amount: 25000,
     deposit: 521
   });
+
   return (
     <Container>
       <Header />
@@ -28,7 +29,12 @@ const SavingGoal: React.FC = () => {
           Let&apos;s plan your <strong>saving goal.</strong>
         </span>
         <Card>
-          <FormContext.Provider value={state}>
+          <FormContext.Provider
+            value={{
+              ...state,
+              setState: data => setState({ ...state, ...data })
+            }}
+          >
             <InputSection>
               <CurrencyInput label="Total Amount" value={state.amount} />
               <MonthSelect />
