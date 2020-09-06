@@ -5,7 +5,7 @@ export const CardContainer = styled.form`
   flex-direction: column;
   border-radius: 8px;
   height: auto;
-  max-width: 580px;
+  max-width: 620px;
   padding: 40px;
   box-shadow: 0px 2px 16px rgba(225, 232, 237, 0.8);
   background-color: var(--white);

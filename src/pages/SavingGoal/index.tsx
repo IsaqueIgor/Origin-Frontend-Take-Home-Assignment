@@ -39,7 +39,7 @@ const SavingGoal: React.FC = () => {
               <MonthSelect />
             </InputSection>
             <Result />
-            <Button>Confirm</Button>
+            <Button aria-label="Confirm">Confirm</Button>
           </FormContext.Provider>
         </Card>
       </Content>
