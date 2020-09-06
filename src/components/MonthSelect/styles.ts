@@ -26,6 +26,10 @@ export const SelectWrapper = styled.div`
     padding: 0 1.2vw;
     background-color: var(--gray);
     border: none;
+
+    &:disabled {
+      cursor: no-drop;
+    }
   }
 `;
 

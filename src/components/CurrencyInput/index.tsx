@@ -6,7 +6,7 @@ import { DolarSign } from '../../styles/icons';
 import { Container, IconContainer, InputWrapper } from './styles';
 
 interface Props {
-  label: React.ReactNode;
+  label: string;
   value: number | undefined;
   updateValue: (value: number | undefined) => void;
 }
