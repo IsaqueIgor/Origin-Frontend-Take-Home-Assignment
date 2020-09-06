@@ -34,6 +34,5 @@ export const InputSection = styled.div`
 
   @media (max-width: 680px) {
     flex-direction: column;
-    justify-content: space-between;
   }
 `;

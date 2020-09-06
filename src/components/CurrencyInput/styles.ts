@@ -4,36 +4,42 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 0.5vh;
-  height: 6vh;
 
   label {
     font-size: 16px;
+    font-weight: bold;
     display: block;
+    padding: 12px 0 4px 0;
+  }
+
+  @media (min-width: 320px) {
+    width: 100%;
   }
 `;
 
 export const InputWrapper = styled.div`
   display: flex;
-  height: 5vh;
   border-radius: 4px;
+  padding-right: 0;
 
   input {
-    padding: 0 1.2vw;
     border: 1px solid var(--gray);
-    width: 256px;
+    width: 90%;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: bold;
 
     &:focus {
       outline: 0;
     }
 
     @media (min-width: 320px) {
-      width: 178px;
+      width: 80%;
+      padding: 0 20px;
     }
   }
   @media (min-width: 320px) {
-    height: 45px;
+    height: 60px;
+    padding-right: 16px;
   }
 `;
 

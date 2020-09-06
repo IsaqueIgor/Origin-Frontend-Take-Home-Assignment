@@ -9,10 +9,8 @@ import {
   ResultDescriptionContainer
 } from './styles';
 
-import { FormatNumber } from '../../utils';
-
 const Result: React.FC = () => {
-  const { deposit, month, year, amount } = useContext(Context);
+  const { month, year, amount } = useContext(Context);
 
   const futureDate = new Date(`${year}-${month}-01`);
   const currentDate = new Date().toISOString().split('T')[0];
@@ -20,9 +18,6 @@ const Result: React.FC = () => {
   const diff = moment(futureDate).diff(currentDate, 'month') + 1;
 
   const result = (amount / diff).toFixed(2);
-  // const monthString = futureDate.toLocaleString('en', {
-  //   month: 'long'
-  // });
 
   return (
     <ResultContainer>

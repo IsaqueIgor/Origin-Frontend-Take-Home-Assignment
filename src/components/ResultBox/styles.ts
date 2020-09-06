@@ -34,6 +34,7 @@ export const ResultMonthly = styled.div`
       text-indent: 0;
       content: 'Monthly Amount';
       float: left;
+      height: 46px;
     }
   }
 `;

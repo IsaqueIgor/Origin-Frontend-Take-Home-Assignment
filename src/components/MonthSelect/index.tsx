@@ -20,8 +20,8 @@ const months = [
 ];
 
 const MonthSelect: React.FC = () => {
-  const [isDisable, setIsDisable] = useState(false);
   const { month, year, setState } = useContext(Context);
+  const [isDisable, setIsDisable] = useState(false);
 
   const oldMonth = months.indexOf(month);
   const currentDate = new Date();
@@ -31,7 +31,6 @@ const MonthSelect: React.FC = () => {
   function handleDecrement(event: React.MouseEvent<HTMLElement>) {
     event.preventDefault();
     if (year === currentYear && month === currentMonth) {
-      console.log(isDisable);
       setIsDisable(true);
     } else if (month === months[0]) {
       setState({ month: months[11], year: year - 1 });

@@ -16,8 +16,7 @@ const SavingGoal: React.FC = () => {
   const [state, setState] = useState({
     year: 2021,
     month: 'October',
-    amount: 25000,
-    deposit: 521
+    amount: 25000
   });
 
   return (

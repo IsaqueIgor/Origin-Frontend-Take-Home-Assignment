@@ -2,14 +2,18 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  height: 45px;
   margin-top: 0.5vh;
   flex-direction: column;
-  width: 256px;
 
   label {
     font-size: 16px;
     display: block;
+    font-weight: bold;
+    padding: 12px 0 4px 0;
+  }
+
+  @media (min-width: 320px) {
+    width: 100%;
   }
 `;
 
@@ -17,12 +21,11 @@ export const SelectWrapper = styled.div`
   display: flex;
   justify-content: space-between;
 
-  height: 6vh;
   border-radius: 4px;
-  border: 0.6px solid var(--gray);
+  border: 0.2px solid var(--gray);
 
   button {
-    width: 48px;
+    width: 20%;
     padding: 0 1.2vw;
     background-color: var(--gray);
     border: none;
@@ -30,6 +33,10 @@ export const SelectWrapper = styled.div`
     &:disabled {
       cursor: no-drop;
     }
+  }
+
+  @media (min-width: 320px) {
+    height: 60px;
   }
 `;
 
