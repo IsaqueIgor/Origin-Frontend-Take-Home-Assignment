@@ -31,14 +31,19 @@ const SavingGoal: React.FC = () => {
           <FormContext.Provider
             value={{
               ...state,
-              setState: data => setState({ ...state, ...data })
+              setState: (data: object) =>
+                setState({ ...state, ...(data as object) })
             }}
           >
             <InputSection>
               <CurrencyInput label="Total Amount" value={state.amount} />
               <MonthSelect />
             </InputSection>
-            <Result />
+            <Result
+              year={state.year}
+              month={state.month}
+              amount={state.amount}
+            />
             <Button aria-label="Confirm">Confirm</Button>
           </FormContext.Provider>
         </Card>

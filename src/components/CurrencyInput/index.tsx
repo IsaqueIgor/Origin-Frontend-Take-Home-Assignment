@@ -8,7 +8,7 @@ import { Container, IconContainer, InputWrapper } from './styles';
 interface Props {
   label: string;
   value: number | undefined;
-  updateValue: (value: number | undefined) => void;
+  updateValue?: (value: number | undefined) => void;
 }
 
 const CurrencyInput: React.FC<Props> = ({
