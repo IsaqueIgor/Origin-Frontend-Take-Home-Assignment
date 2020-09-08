@@ -16,8 +16,6 @@ type Props = {
 };
 
 const Result: React.FC<Props> = ({ year, month, amount }: Props) => {
-  //const { month, year, amount } = useContext(Context);
-
   const futureDate = new Date(`${year}-${month}-01`);
   const currentDate = new Date().toISOString().split('T')[0];
 

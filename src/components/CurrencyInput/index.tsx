@@ -8,20 +8,16 @@ import { Container, IconContainer, InputWrapper } from './styles';
 interface Props {
   label: string;
   value: number | undefined;
-  updateValue?: (value: number | undefined) => void;
 }
 
-const CurrencyInput: React.FC<Props> = ({
-  label,
-  value: valueFromProp,
-  updateValue
-}) => {
+const CurrencyInput: React.FC<Props> = ({ label, value: valueFromProp }) => {
+  const { setState } = useContext(Context);
+
   const [currentValue, updateCurrentValue] = React.useState<string>(
     valueFromProp ? FormatNumber(valueFromProp) : ''
   );
 
   const inputField = React.createRef<HTMLInputElement>();
-  const { setState } = useContext(Context);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const {
@@ -30,21 +26,18 @@ const CurrencyInput: React.FC<Props> = ({
 
     if (value === '') {
       updateCurrentValue('');
-      return updateValue(undefined);
     }
 
     const valueAsNumber = StringToNumber(value);
 
     updateCurrentValue(FormatNumber(valueAsNumber));
     setState({ amount: valueAsNumber });
-    return updateValue(valueAsNumber);
   };
 
   const handleReset = () => {
     inputField.current.focus();
     updateCurrentValue('');
     setState({ amount: 0 });
-    return updateValue(undefined);
   };
 
   return (
