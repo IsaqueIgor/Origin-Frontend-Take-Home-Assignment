@@ -20,6 +20,7 @@ const CurrencyInput: React.FC<Props> = ({
     valueFromProp ? FormatNumber(valueFromProp) : ''
   );
 
+  const inputField = React.createRef<HTMLInputElement>();
   const { setState } = useContext(Context);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -39,14 +40,26 @@ const CurrencyInput: React.FC<Props> = ({
     return updateValue(valueAsNumber);
   };
 
+  const handleReset = () => {
+    inputField.current.focus();
+    updateCurrentValue('');
+    setState({ amount: 0 });
+    return updateValue(undefined);
+  };
+
   return (
     <Container>
       <label>{label}</label>
       <InputWrapper>
-        <IconContainer>
+        <IconContainer onClick={handleReset}>
           <DolarSign />
         </IconContainer>
-        <input type="text" value={currentValue} onChange={handleChange} />
+        <input
+          ref={inputField}
+          type="text"
+          value={currentValue}
+          onChange={handleChange}
+        />
       </InputWrapper>
     </Container>
   );
