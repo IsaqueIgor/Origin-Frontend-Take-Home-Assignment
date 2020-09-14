@@ -3,10 +3,10 @@ import styled from 'styled-components';
 export const CardContainer = styled.form`
   display: flex;
   flex-direction: column;
-  border-radius: 8px;
+  border-radius: 0.8rem;
   height: auto;
-  max-width: 620px;
-  padding: 40px;
+  max-width: 62rem;
+  padding: 4rem;
   box-shadow: 0px 2px 16px rgba(225, 232, 237, 0.8);
   background-color: var(--white);
 
@@ -14,7 +14,7 @@ export const CardContainer = styled.form`
     padding: 48px 40px;
     width: 100%;
     h1 {
-      font-size: 32px;
+      font-size: 3.2rem;
     }
   }
 `;
@@ -26,11 +26,11 @@ export const CardHeader = styled.div`
   justify-content: center;
 
   h1 {
-    font-size: 32px;
+    font-size: 3.2rem;
   }
 
   p {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: var(--gray-strong);
   }
 `;

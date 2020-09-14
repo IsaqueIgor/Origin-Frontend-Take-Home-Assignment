@@ -48,6 +48,7 @@ const CurrencyInput: React.FC<Props> = ({ label, value: valueFromProp }) => {
           <DolarSign />
         </IconContainer>
         <input
+          data-testid="currency-input"
           ref={inputField}
           type="text"
           value={currentValue}
